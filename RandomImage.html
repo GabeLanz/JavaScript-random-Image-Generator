@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+  <style type = "text/css">
+      .btn-grey { width: 100px; background-color: #a9a9a9; position:relative;}
+  </style>
+
+    <script>
+     
+     
+
+   function get_image()
+     {
+       var randNum;
+       var imageNum;
+
+       var randNum = Math.floor(Math.random() * 4) + 1;
+       //alert("randNum is: " + randNum);
+
+       imageNum="cat" + randNum + ".jpg";
+       //alert("imageNum is: " + imageNum);
+
+       document.getElementById("catPic").src=imageNum;
+     }
+      
+
+
+     </script>
+  </head>
+    <body>
+      <form action= "#">
+      <input id="gen_image" class="btn-gray"
+             type="button" onclick="get_image()" value="Click for random image" />
+
+     <img id="catPic" src="">
+
+     
+      </form>
+   </body>
+</html>
